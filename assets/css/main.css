@@ -3157,6 +3157,10 @@
 				padding: 38em 0 0 0;
 			}
 
+			#banner figure {
+				top: -200px;
+			}
+
 	}
 
 /* Normal */
@@ -3200,6 +3204,10 @@
 
 				#banner h2 {
 					font-size: 2.5em;
+				}
+
+				#banner figure {
+				 top: 0;
 				}
 
 	}
