@@ -1830,6 +1830,11 @@
 		margin: 0 0 2em 0;
 	}
 
+	p, li, em, i, strong, a {
+		font-size: 18px;
+		line-height: 1.6;
+	}
+
 	h1, h2, h3, h4, h5, h6 {
 		color: #555555;
 		font-weight: 900;
@@ -3035,9 +3040,28 @@
 		background-repeat: repeat-x;
 		background-size: 1500px 300px;
 		color: #fff;
-		padding: 16em 0 14em 0;
+		padding: 38em 0 0 0;
 		text-align: center;
+		position: relative;
+		overflow: hidden;
 	}
+
+		#banner > * {
+			position: relative;
+			z-index: 1;
+		}
+
+		#banner figure {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			z-index: 0;
+		}
+
+		#banner figure img {
+			object-fit: cover;
+		}
 
 		#banner :last-child {
 			margin-bottom: 0;
@@ -3087,6 +3111,11 @@
 				color: #f8d2d6;
 			}
 
+			.banner__header {
+				background: #333447;
+				padding: 25px 25px 35px;
+			}
+
 /* Footer */
 
 	#footer {
@@ -3125,7 +3154,7 @@
 
 			#banner {
 				background-size: 1125px 225px;
-				padding: 12em 0 10em 0;
+				padding: 38em 0 0 0;
 			}
 
 	}
@@ -3166,8 +3195,7 @@
 		/* Banner */
 
 			#banner {
-				background-size: 900px 180px;
-				padding: 10em 0 8em 0;
+				padding: 38em 0 0 0;
 			}
 
 				#banner h2 {
