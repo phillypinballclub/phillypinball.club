@@ -2794,6 +2794,31 @@
 			background: #ffffff;
 		}
 
+		.wrapper.style4 {
+			background: #333447;
+			color: #fff;
+		}
+
+    .wrapper.style4 h3, .wrapper.style4 h4, .wrapper.style4 h5, .wrapper.style4 h6, .wrapper.style4 strong, .wrapper.style4 b, .wrapper.style4 th, .wrapper.style4 label {
+				color: #e96c77;
+			}
+
+			.wrapper.style4 h2 {
+				color: #fff;
+			}
+
+			.wrapper.style4 header p {
+				color: #fbe8ea;
+			}
+
+			.wrapper.style4 header.major > :first-child:before, .wrapper.style4 header.major > :first-child:after {
+				background-image: url("images/header-major-on-dark.svg");
+			}
+
+			.wrapper.style4 .box {
+				background: #5b5c6b;
+			}
+
 /* Header */
 
 	#page-wrapper {
