@@ -3060,10 +3060,8 @@
 
 	#banner {
 		background-color: #333447;
-		background-image: url("images/banner.svg");
-		background-position: 25% bottom;
-		background-repeat: repeat-x;
-		background-size: 1500px 300px;
+		background: url("images/cancrushertourney.jpg") center -170px no-repeat;
+		background-size: cover;
 		color: #fff;
 		padding: 38em 0 0 0;
 		text-align: center;
@@ -3074,18 +3072,6 @@
 		#banner > * {
 			position: relative;
 			z-index: 1;
-		}
-
-		#banner figure {
-			position: absolute;
-			top: 0;
-			left: 0;
-			right: 0;
-			z-index: 0;
-		}
-
-		#banner figure img {
-			object-fit: cover;
 		}
 
 		#banner :last-child {
@@ -3178,7 +3164,6 @@
 		/* Banner */
 
 			#banner {
-				background-size: 1125px 225px;
 				padding: 38em 0 0 0;
 			}
 
@@ -3335,6 +3320,7 @@
 		/* Banner */
 
 			#banner {
+				background-position: center;
 				padding: 8em 2em;
 			}
 
@@ -3572,7 +3558,6 @@
 		/* Banner */
 
 			#banner {
-				background-size: 675px 135px;
 				padding: 5em 2em 4em 2em;
 			}
 
@@ -3689,7 +3674,6 @@
 		/* Banner */
 
 			#banner {
-				background-size: 540px 108px;
 				padding: 7em 2em 6em 2em;
 			}
 
