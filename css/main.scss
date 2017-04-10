@@ -1,3 +1,7 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
 @import 'libs/vars';
 @import 'libs/functions';
 @import 'libs/mixins';
@@ -179,6 +183,11 @@
 		padding: 0.25em 0.65em;
 	}
 
+	p, li, em, i, strong, a {
+   font-size: 18px;
+   line-height: 1.6;
+ }
+
 	.align-left {
 		text-align: left;
 	}
@@ -236,7 +245,7 @@
 
 				&:before,
 				&:after {
-					background-image: url('images/header-major-on-light.svg');
+					background-image: url('/images/header-major-on-light.svg');
 					background-repeat: no-repeat;
 					content: '';
 					display: inline-block;
@@ -926,7 +935,7 @@
 					> :first-child {
 						&:before,
 						&:after {
-							background-image: url('images/header-major-on-dark.svg');
+							background-image: url('/images/header-major-on-dark.svg');
 						}
 					}
 				}
@@ -967,6 +976,32 @@
 
 		&.style3 {
 			background: #ffffff;
+		}
+
+		&.style4 {
+
+			background: #333447;
+			color: #fff;
+
+      h3, h4, h5, h6, strong, b, th, label {
+				color: #e96c77;
+			}
+
+			h2 {
+				color: #fff;
+			}
+
+			header p {
+				color: #fbe8ea;
+			}
+
+			header.major > :first-child:before, header.major > :first-child:after {
+				background-image: url("images/header-major-on-dark.svg");
+			}
+
+			.box {
+				background: #5b5c6b;
+			}
 		}
 	}
 
@@ -1171,12 +1206,10 @@
 
 	#banner {
 		background-color: #333447;
-		background-image: url('images/banner.svg');
-		background-position: 25% bottom;
-		background-repeat: repeat-x;
-		background-size: 1500px 300px;
+		background: url('/images/cancrushertourney.jpg') center -170px no-repeat;
+		background-size: cover;
 		color: #fff;
-		padding: 16em 0 14em 0;
+		padding: 38em 0 0 0;
 		text-align: center;
 
 		:last-child {
@@ -1221,6 +1254,11 @@
 				}
 			}
 		}
+
+		& .banner__header {
+			background: #333447;
+      padding: 25px 25px 35px;
+		}
 	}
 
 /* Footer */
@@ -1262,8 +1300,7 @@
 		/* Banner */
 
 			#banner {
-				background-size: 1125px 225px;
-				padding: 12em 0 10em 0;
+				padding: 38em 0 0 0;
 			}
 
 	}
@@ -1311,8 +1348,7 @@
 		/* Banner */
 
 			#banner {
-				background-size: 900px 180px;
-				padding: 10em 0 8em 0;
+				padding: 38em 0 0 0;
 
 				h2 {
 					font-size: 2.5em;
@@ -1422,6 +1458,7 @@
 		/* Banner */
 
 			#banner {
+				background-position: center;
 				padding: 8em 2em;
 			}
 
@@ -1610,7 +1647,6 @@
 		/* Banner */
 
 			#banner {
-				background-size: 675px 135px;
 				padding: 5em 2em 4em 2em;
 
 				h2 {
@@ -1737,7 +1773,6 @@
 		/* Banner */
 
 			#banner {
-				background-size: 540px 108px;
 				padding: 7em 2em 6em 2em;
 			}
 
@@ -1748,3 +1783,7 @@
 			}
 
 	}
+
+.mc-field-group {
+  margin-bottom: 20px;
+}

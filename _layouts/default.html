@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body class="landing">
+    <div id="page-wrapper">
+
+    {% include header.html %}
+
+    <div class="page-content">
+      {{ content }}
+    </div>
+
+    {% include footer.html %}
+
+    <!--startjs-->
+    {% include js-custom.html %}
+    <!--endjs-->
+    </div>
+  </body>
+
+</html>
