@@ -139,7 +139,9 @@ gulp.task('optimize-html-prod', ['optimize-js-prod'], function() {
 });
 gulp.task('push-to-gh-pages', ['optimize-html-prod'], function() {
   return gulp.src('./_site/**/*')
-    .pipe(ghPages());
+    .pipe(ghPages({
+        branch: 'master'
+    }));
 });
 gulp.task('deploy',
   ['jekyll-build-prod',
