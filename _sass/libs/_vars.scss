@@ -29,7 +29,7 @@
 	$palette: (
 		bg:					#ffffff,
 		fg:					#808080,
-		fg-bold:			#555555,
+		fg-bold:			#333333,
 		fg-light:			#aaa,
 		border:				#dddddd,
 		border-bg:			#f0f0f0,
@@ -37,10 +37,10 @@
 		border2-bg:			#dddddd,
 
 		accent1: (
-			bg:				#e96c77,
-			fg:				mix(#e96c77, #ffffff, 15%),
+			bg:				#ff0000,
+			fg:				mix(#ff0000, #ffffff, 15%),
 			fg-bold:		#ffffff,
-			fg-light:		mix(#e96c77, #ffffff, 30%)
+			fg-light:		mix(#ff0000, #ffffff, 30%)
 		),
 
 		accent2: (

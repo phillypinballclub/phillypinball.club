@@ -5,7 +5,6 @@
 @import 'libs/vars';
 @import 'libs/functions';
 @import 'libs/mixins';
-@import url('font-awesome.min.css');
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600,600italic,700,900');
 
 /*
@@ -980,12 +979,7 @@
 
 		&.style4 {
 
-			background: #333447;
-			color: #fff;
-
-      h3, h4, h5, h6, strong, b, th, label {
-				color: #e96c77;
-			}
+			background: #ff0000;
 
 			h2 {
 				color: #fff;
@@ -996,12 +990,9 @@
 			}
 
 			header.major > :first-child:before, header.major > :first-child:after {
-				background-image: url("images/header-major-on-dark.svg");
+				background-image: url("/images/header-major-on-dark.svg");
 			}
 
-			.box {
-				background: #5b5c6b;
-			}
 		}
 	}
 
@@ -1072,7 +1063,7 @@
 					}
 
 					a {
-						color: #fff !important;
+						color: #fff;
 						display: inline-block;
 						font-weight: _font(weight-bold);
 						letter-spacing: 0.05em;
@@ -1205,7 +1196,7 @@
 /* Banner */
 
 	#banner {
-		background-color: #333447;
+		background-color: #ff0000;
 		background: url('/images/cancrushertourney.jpg') center -170px no-repeat;
 		background-size: cover;
 		color: #fff;
@@ -1256,7 +1247,7 @@
 		}
 
 		& .banner__header {
-			background: #333447;
+			background: #ff0000;
       padding: 25px 25px 35px;
 		}
 	}
@@ -1786,4 +1777,90 @@
 
 .mc-field-group {
   margin-bottom: 20px;
+}
+
+.hidden-text {
+   clip: rect(1px, 1px, 1px, 1px);
+   height: 1px;
+   width: 1px;
+   overflow: hidden;
+   position: absolute !important;
+}
+
+.logo {
+	margin-bottom: -40px;
+
+	img {
+		width: 800px;
+		height: auto;
+	}
+}
+
+.mark {
+	position: absolute;
+	top: -16px;
+	left: 20px;
+
+	img {
+		width: 175px;
+		display: block;
+	}
+}
+
+#header.alt {
+	position: fixed;
+	height: auto;
+	padding: 5px 25px 6px;
+	margin: 30px 0 0;
+	line-height: normal;
+	background: #fff;
+
+	& nav {
+		float: right;
+		position: static;
+	}
+
+	& nav > ul > li a {
+		color: #333;
+	}
+
+}
+
+#banner h3 {
+	color: #fff;
+	margin-left: 320px;
+}
+
+
+
+// slanted edges here
+.diagonal {
+  background: #ff0000;
+  position: relative;
+  z-index: 1;
+
+  &:before,
+  &:after {
+    background: inherit;
+    content: '';
+    display: block;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    -webkit-backface-visibility: hidden; // for Chrome Windows
+  }
+
+  &:before {
+    top: -80px;
+    transform: skewY(-2.5deg);
+    transform-origin: 100% 0;
+  }
+
+  &:after {
+    bottom: 0;
+    transform: skewY(-2.5deg);
+    transform-origin: 100%;
+  }
 }

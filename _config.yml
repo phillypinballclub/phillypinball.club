@@ -5,14 +5,11 @@
 # For technical reasons, this file is *NOT* reloaded automatically.
 
 # Site settings
-title: Title for Impatient-Jekyll
-email: your-email@domain.com
+title: Philly Pinball Club
+email: info@phillypinball.club
 description: > # this means to ignore newlines until "twitter_username:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-twitter_username: bdavidxyz
-github_username:  bdavidxyz
+  A beginner-friendly, city-wide pinball club in Philadelphia, PA
+twitter_username: phillypinball
 
 # Build settings
 markdown: kramdown

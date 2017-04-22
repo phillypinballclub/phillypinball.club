@@ -28,8 +28,6 @@ gulp.task('jekyll-build', function (done) {
         .on('close', done);
 });
 
-
-
 /**
  * Rebuild Jekyll & do page reload
  */
@@ -101,10 +99,10 @@ gulp.task('jekyll-build-prod', function (done) {
 gulp.task('optimize-css-prod', ['jekyll-build-prod'], function () {
     return gulp.src('_site/css/main.css')
         .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
-        .pipe(uncss({
-           html: ['_site/**/*.html'],
-           ignore: []
-       }))
+    //     .pipe(uncss({
+    //        html: ['_site/**/*.html'],
+    //        ignore: []
+    //    }))
         .pipe(rename('all.min.css'))
         .pipe(minifyCSS())
         .pipe(gulp.dest('_site/public/css'))
@@ -129,7 +127,8 @@ gulp.task('optimize-html-prod', ['optimize-js-prod'], function() {
 		}))
 		.pipe(replace(/<!--startjs-->[^]+<!--endjs-->/, function(s) {
 			var js_script = fs.readFileSync('_site/public/js/all.min.js', 'utf8');
-			return '<script type="text/javascript">' + js_script + '</script>';
+
+            if (js_script) return '<script type="text/javascript">' + js_script + '</script>';
 		}))
     .pipe(minifyHTML({
       quotes: true
