@@ -2701,7 +2701,7 @@ input[type="button"],
 #header.alt {
   position: fixed;
   height: auto;
-  padding: 5px 25px 6px;
+  padding: 5px 25px;
   margin: 30px 0 0;
   line-height: normal;
   background: #fff; }
