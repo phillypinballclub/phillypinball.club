@@ -1031,8 +1031,7 @@
 
 				> li {
 					display: inline-block;
-					margin-left: 3em;
-					padding-left: 0;
+					padding: 6px 15px;
 
 					> ul {
 						display: none;
@@ -1328,6 +1327,9 @@
 
 	@include breakpoint(narrow) {
 
+
+
+
 		/* Basic */
 
 			body, input, select, textarea {
@@ -1416,10 +1418,6 @@
 
 			#page-wrapper {
 				padding-top: 0;
-			}
-
-			#header {
-				display: none;
 			}
 
 		/* Banner */
@@ -1546,6 +1544,33 @@
 				}
 			}
 
+			#banner {
+				.logo {
+					margin-bottom: -20px;
+
+					img {
+						width: 100%;
+					}
+				}
+
+				.banner__header h3 {
+					margin-left: 180px;
+				}
+			}
+
+			#header.alt {
+				text-align: center;
+				margin: 0!important;
+				position: static!important;
+
+				nav {
+					float: none!important;
+				}
+
+				.mark {
+					display: none;
+				}
+			}
 	}
 
 /* Mobile */
@@ -1644,6 +1669,25 @@
 						padding-left: 0;
 					}
 				}
+			}
+
+			#banner {
+				.logo {
+					margin-bottom: 0;
+
+					img {
+						width: 100%;
+					}
+				}
+
+				.banner__header {
+					padding-top: 0;
+
+					h3 {
+						margin-left: 0;
+					}
+				}
+
 			}
 
 	}
@@ -1820,7 +1864,7 @@
     background: inherit;
     content: '';
     display: block;
-    height: 50%;
+    height: 60%;
     left: 0;
     position: absolute;
     right: 0;
