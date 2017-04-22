@@ -2102,21 +2102,9 @@ input[type="button"],
   .wrapper.style3 {
     background: #ffffff; }
   .wrapper.style4 {
-    background: #ff0000; }
-    .wrapper.style4 h2 {
-      color: #fff; }
-    .wrapper.style4 header p {
-      color: #fbe8ea; }
-    .wrapper.style4 header.major > :first-child:before, .wrapper.style4 header.major > :first-child:after {
-      background-image: url("/images/header-major-on-dark.svg"); }
+    background: #ececec; }
 
 /* Header */
-#page-wrapper {
-  padding-top: 3em; }
-
-body.landing #page-wrapper {
-  padding-top: 0; }
-
 @-moz-keyframes reveal-header {
   0% {
     top: -5em; }
