@@ -978,35 +978,11 @@
 		}
 
 		&.style4 {
-
-			background: #ff0000;
-
-			h2 {
-				color: #fff;
-			}
-
-			header p {
-				color: #fbe8ea;
-			}
-
-			header.major > :first-child:before, header.major > :first-child:after {
-				background-image: url("/images/header-major-on-dark.svg");
-			}
-
+			background: #ececec;
 		}
 	}
 
 /* Header */
-
-	#page-wrapper {
-		padding-top: 3em;
-	}
-
-	body.landing {
-		#page-wrapper {
-			padding-top: 0;
-		}
-	}
 
 	@include keyframes('reveal-header') {
 		0% { top: -5em; }
