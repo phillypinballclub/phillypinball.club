@@ -3,7 +3,7 @@
 
   {% include head.html %}
 
-  <body class="page">
+  <body {% if page.url != "/" %}class="page"{% endif %}>
     <div id="page-wrapper">
 
     {% include header.html %}
