@@ -2737,3 +2737,7 @@ input[type="button"],
     bottom: 0;
     transform: skewY(-2.5deg);
     transform-origin: 100%; }
+
+body.page .page-content {
+  background: #f5f5f5;
+  padding-top: 60px; }
