@@ -1840,3 +1840,10 @@
     transform-origin: 100%;
   }
 }
+
+body.page {
+	.page-content {
+		background: #f5f5f5;
+		padding-top: 60px;
+	}
+}
