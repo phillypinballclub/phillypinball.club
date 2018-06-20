@@ -2714,7 +2714,8 @@ input[type="button"],
 .mark {
   position: absolute;
   top: -16px;
-  left: 20px; }
+  left: 20px;
+  display: none; }
   .mark img {
     width: 175px;
     display: block; }
@@ -2722,10 +2723,11 @@ input[type="button"],
 #header.alt {
   position: fixed;
   height: auto;
-  padding: 7px 25px 5px;
-  margin: 30px 0 0;
+  padding: 8px 25px 5px;
+  margin: 0;
   line-height: normal;
-  background: #fff; }
+  background: #fff;
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.07); }
   #header.alt nav {
     float: right;
     position: static; }
@@ -2773,3 +2775,12 @@ body.page .page-content {
   .alert, .alert strong {
     color: #31708f;
     font-size: 25px; }
+
+.box p {
+  margin-bottom: 0; }
+
+.box p + p {
+  margin-top: 1em; }
+
+.box h4, .mailing-list {
+  margin-top: 2em; }
