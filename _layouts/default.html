@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html>
-
   {% include head.html %}
 
   <body {% if page.url != "/" %}class="page"{% endif %}>
     <div id="page-wrapper">
+
+    {% if page.layout == 'page' %}
+      {% include header.html %}
+    {% endif %}
+
+
 
       <div class="page-content">
         {{ content }}
